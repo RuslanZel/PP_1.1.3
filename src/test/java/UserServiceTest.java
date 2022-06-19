@@ -30,7 +30,7 @@ public class UserServiceTest {
             userService.dropUsersTable();
             userService.createUsersTable();
         } catch (Exception e) {
-            Assert.fail("При тестировании создания таблицы пользователей произошло исключение\n" + e.getMessage());
+            Assert.fail("При тестировании создания таблицы пользователей произошло  исключение\n" + e.getMessage());
         }
     }
 
