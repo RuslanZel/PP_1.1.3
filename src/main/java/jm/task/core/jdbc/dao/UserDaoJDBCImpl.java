@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDaoJDBCImpl implements UserDao {
-    //private final Connection connection = Util.getConnection();
     private final Connection connection = Util.getConnection();
 
     public UserDaoJDBCImpl() {
@@ -66,7 +65,6 @@ public class UserDaoJDBCImpl implements UserDao {
     // Получение всех User(ов) из таблицы
     public List<User> getAllUsers() {
         List<User> users_new = new ArrayList<>();
-
         String sql = "SELECT * FROM users_new";
         try (ResultSet resultSet = connection.createStatement().executeQuery(sql)) {
             while (resultSet.next()) {

@@ -2,13 +2,7 @@ package jm.task.core.jdbc;
 
 import jm.task.core.jdbc.dao.UserDao;
 import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
-import jm.task.core.jdbc.model.User;
-import jm.task.core.jdbc.service.UserService;
-import jm.task.core.jdbc.service.UserServiceImpl;
 import jm.task.core.jdbc.util.Util;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 
 
 public class Main {
@@ -25,7 +19,7 @@ public class Main {
 
         userDao.removeUserById(1);
         userDao.getAllUsers();
-       // userDao.cleanUsersTable();
-        //userDao.dropUsersTable();
+        userDao.cleanUsersTable();
+        userDao.dropUsersTable();
     }
 }
